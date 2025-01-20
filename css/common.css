@@ -68,6 +68,8 @@ button {
 body {
     font: 1.6rem/1.7 "Montserrat", sans-serif;
     color: var(--text-color);
+    text-transform: capitalize; /* ttc : 단어의 첫번째 글자를 대문자로 */
+    word-break: keep-all;
 }
 
 .btn {
@@ -85,4 +87,20 @@ body {
 .btn-black {
     background: #000;
     color: #fff;
+}
+
+.text-gra {
+    /* 텍스트에 그라데이션 적용 */
+    background: linear-gradient(90deg, var(--main-color) 0%, var(--sub-color) 100%);
+    /* -webkit-background-clip: text; */
+    background-clip: text;
+    /* color: transparent; */
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.sec-title {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 1.2;
 }
